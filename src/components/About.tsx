@@ -119,6 +119,19 @@ const About = () => {
             </div>
           ))}
         </div>
+
+        {/* Gallery */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">Our Work Gallery</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <img src="/new/5.jpg" alt="Gallery image 1" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+            <img src="/new/9uj.jpg" alt="Gallery image 2" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+            <img src="/new/yy.jpg" alt="Gallery image 3" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+            <img src="/new/o.jpg" alt="Gallery image 4" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+            <img src="/new/68.jpg" alt="Gallery image 5" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+            <img src="/new/3ed.jpg" alt="Gallery image 6" className="w-full h-48 object-cover rounded-lg shadow-lg" />
+          </div>
+        </div>
       </div>
     </section>
   );

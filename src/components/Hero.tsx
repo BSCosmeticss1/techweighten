@@ -4,6 +4,57 @@ import { NavLink } from '@/components/NavLink';
 import { useEffect, useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 
+const slides = [
+  {
+    img: '/new/5.jpg',
+    alt: 'Technology background',
+    title: 'Empowering Businesses with Technology',
+    description: 'Your business is our business. We deliver innovative IT solutions tailored to your operational, technical, and business goals.',
+    buttons: [
+      { text: 'Start Your Project', variant: 'accent', to: '/contact' },
+      { text: 'Explore Services', variant: 'hero-outline', to: '/services' },
+    ],
+  },
+  {
+    img: '/new/tg.jpg',
+    alt: 'Team collaboration',
+    title: 'What Makes Us Different',
+    description: 'We combine strategy, engineering, and support to build resilient digital operations.',
+    features: ['Tailored solutions for specific goals', 'Modern tools and best practices', 'Partnership and long-term support'],
+  },
+  {
+    img: '/new/yy.jpg',
+    alt: 'Reliable infrastructure',
+    title: 'We Ensure 99% Uptime',
+    description: 'Performance, reliability, and proactive monitoring to keep your business online.',
+    highlight: '99% Uptime',
+  },
+  {
+    img: '/new/9uj.jpg',
+    alt: 'Innovative technology',
+    title: 'Driving Innovation with Cutting-Edge Tech',
+    description: 'Stay ahead of the curve with our latest technological advancements and innovative solutions.',
+    buttons: [
+      { text: 'Get Started', variant: 'accent', to: '/contact' },
+      { text: 'Our Innovations', variant: 'hero-outline', to: '/services' },
+    ],
+  },
+  {
+    img: '/new/68.jpg',
+    alt: 'Expert team',
+    title: 'Meet Our Expert Team',
+    description: 'Our skilled professionals bring years of experience and expertise to deliver exceptional results.',
+    features: ['Certified Specialists', 'Years of Experience', 'Client-Focused Approach'],
+  },
+  {
+    img: '/new/90.jpg',
+    alt: 'Reliable support',
+    title: '24/7 Support You Can Count On',
+    description: 'Round-the-clock assistance and maintenance to ensure your systems run smoothly at all times.',
+    highlight: '24/7 Available',
+  },
+];
+
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
   useEffect(() => {
@@ -17,80 +68,57 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen overflow-hidden">
       <Carousel opts={{ loop: true }} setApi={setApi} className="relative">
         <CarouselContent>
-          <CarouselItem>
-            <div className="relative min-h-screen flex items-center">
-              <img src="/assets/hero-bg.jpg" alt="Technology background" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-navy/70" />
-              <div className="container-custom relative z-10 py-20">
-                <div className="max-w-3xl mx-auto text-center">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                    Empowering Businesses with <span className="text-accent">Technology</span>
-                  </h1>
-                  <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-                    Your business is our business. We deliver innovative IT solutions tailored to your operational, technical, and business goals.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button variant="accent" size="xl" asChild>
-                      <NavLink to="/contact">
-                        Start Your Project
-                        <ArrowRight size={20} />
-                      </NavLink>
-                    </Button>
-                    <Button variant="hero-outline" size="xl" asChild>
-                      <NavLink to="/services">Explore Services</NavLink>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative min-h-screen flex items-center">
-              <img src="/assets/team-collab.jpg" alt="Team collaboration" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-navy/70" />
-              <div className="container-custom relative z-10 py-20">
-                <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                    What Makes Us Different
-                  </h2>
-                  <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-                    We combine strategy, engineering, and support to build resilient digital operations.
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                    {[
-                      'Tailored solutions for specific goals',
-                      'Modern tools and best practices',
-                      'Partnership and long-term support',
-                    ].map((item) => (
-                      <div key={item} className="flex items-center justify-center gap-2 text-primary-foreground/90">
-                        <CheckCircle className="text-accent" size={22} />
-                        <span className="text-sm md:text-base">{item}</span>
+          {slides.map((slide, index) => (
+            <CarouselItem key={index}>
+              <div className="relative min-h-screen flex items-center">
+                <img src={slide.img} alt={slide.alt} className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-navy/70" />
+                <div className="container-custom relative z-10 py-20">
+                  <div className="max-w-3xl mx-auto text-center">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+                      {slide.title.includes('with') ? (
+                        <>
+                          {slide.title.split(' with ')[0]} with <span className="text-accent">{slide.title.split(' with ')[1]}</span>
+                        </>
+                      ) : (
+                        slide.title
+                      )}
+                    </h1>
+                    <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+                      {slide.description}
+                    </p>
+                    {slide.buttons && (
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        {slide.buttons.map((button, btnIndex) => (
+                          <Button key={btnIndex} variant={button.variant as any} size="xl" asChild>
+                            <NavLink to={button.to}>
+                              {button.text}
+                              {btnIndex === 0 && <ArrowRight size={20} />}
+                            </NavLink>
+                          </Button>
+                        ))}
                       </div>
-                    ))}
+                    )}
+                    {slide.features && (
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                        {slide.features.map((item) => (
+                          <div key={item} className="flex items-center justify-center gap-2 text-primary-foreground/90">
+                            <CheckCircle className="text-accent" size={22} />
+                            <span className="text-sm md:text-base">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {slide.highlight && (
+                      <div className="mt-6">
+                        <div className="text-4xl md:text-5xl font-bold text-accent">{slide.highlight}</div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative min-h-screen flex items-center">
-              <img src="/assets/server-room.jpg" alt="Reliable infrastructure" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-navy/70" />
-              <div className="container-custom relative z-10 py-20">
-                <div className="max-w-3xl mx-auto text-center">
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                    We Ensure 99% Uptime
-                  </h2>
-                  <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-                    Performance, reliability, and proactive monitoring to keep your business online.
-                  </p>
-                  <div className="mt-6">
-                    <div className="text-4xl md:text-5xl font-bold text-accent">99% Uptime</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CarouselItem>
+            </CarouselItem>
+          ))}
         </CarouselContent>
         <CarouselPrevious className="hidden md:flex" />
         <CarouselNext className="hidden md:flex" />
