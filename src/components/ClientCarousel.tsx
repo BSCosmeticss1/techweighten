@@ -1,7 +1,11 @@
 import React from 'react';
 
 const slides = [
+  { image: '/slide/bb.jpeg', alt: 'BB' },
+  { image: '/slide/beauty.jpeg', alt: 'Beauty' },
+  { image: '/slide/Eco.jpg', alt: 'Eco' },
   { image: '/slide/hrmOffice.png', alt: 'HRM Office' },
+  { image: '/slide/logo.jpg', alt: 'Logo' },
   { image: '/slide/moversLogo.webp', alt: 'Movers Logo' },
 ];
 
@@ -12,8 +16,8 @@ const ClientCarousel = () => {
       {/* Inline keyframes for simple marquee without Tailwind config */}
       <style>{`
         @keyframes tw-marquee-left {
-          0% { transform: translateX(0%); }
-          100% { transform: translateX(-50%); }
+          0% { transform: translateX(15%); }
+          100% { transform: translateX(-100%); }
         }
       `}</style>
       <div className="container-custom">
@@ -25,7 +29,7 @@ const ClientCarousel = () => {
               <div
                 className="flex items-center gap-8 whitespace-nowrap"
                 style={{
-                  animation: 'tw-marquee-left 12s linear infinite',
+                  animation: 'tw-marquee-left 20s linear infinite',
                   willChange: 'transform',
                 }}
               >

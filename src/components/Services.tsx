@@ -16,7 +16,7 @@ const services = [
     title: 'IT Infrastructure Setup',
     description: 'Server and network installation, router/switch/firewall setup, cloud-based system deployment, and email platform migration.',
     features: ['Network Configuration', 'Cloud Deployment', 'Security Setup'],
-    image: '/assets/ser1.jpg',
+    image: '/IT.jpg',
     id: 'it-infrastructure-setup',
   },
   {
@@ -24,7 +24,7 @@ const services = [
     title: 'Hardware & Equipment',
     description: 'Supply and configuration of laptops, desktops, printers, CCTV systems, access control, and time & attendance systems.',
     features: ['Device Supply', 'CCTV Installation', 'Access Control'],
-    image: '/assets/ser2.jpg',
+    image: '/hardware.jpg',
     id: 'hardware-equipment',
   },
   {
@@ -40,7 +40,7 @@ const services = [
     title: 'Web & App Development',
     description: 'Corporate website design and hosting, web and mobile application development, UI/UX design and optimization.',
     features: ['Website Design', 'Mobile Apps', 'UI/UX Design'],
-    image: '/assets/ser4.jpg',
+    image: '/consult.jpg',
     id: 'web-app-development',
   },
   {
@@ -48,7 +48,7 @@ const services = [
     title: 'IT Support & Maintenance',
     description: 'Preventive and corrective maintenance, troubleshooting, system upgrades, remote and on-site support services.',
     features: ['24/7 Support', 'System Upgrades', 'Troubleshooting'],
-    image: '/assets/ser1.jpg',
+    image: '/support.jpg',
     id: 'it-support-maintenance',
   },
   {
@@ -56,7 +56,7 @@ const services = [
     title: 'IT Consultancy',
     description: 'IT policy development, technology audit, risk assessment, strategic IT planning and digital transformation advisory.',
     features: ['Strategy Planning', 'Risk Assessment', 'Digital Transformation'],
-    image: '/assets/ser2.jpg',
+    image: '/consult.jpg',
     id: 'it-consultancy',
   },
 ];
