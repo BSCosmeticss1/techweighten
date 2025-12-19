@@ -30,10 +30,24 @@ const Navbar = () => {
               </div>
               <Globe className="h-4 w-4 text-white/70" />
               <span className="text-white/30">|</span>
-              <a href="tel:+2347077323600" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+              <div className="flex items-center gap-2 text-sm text-white/80">
                 <Phone className="h-4 w-4" />
-                +234 707 732 3600
-              </a>
+                <a
+                  href="tel:+2347065755293"
+                  className="hover:text-accent transition-colors"
+                  aria-label="Call 07065755293"
+                >
+                  07065755293
+                </a>
+                <span className="text-white/30">|</span>
+                <a
+                  href="tel:+2347077323600"
+                  className="hover:text-accent transition-colors"
+                  aria-label="Call 07077323600"
+                >
+                  07077323600
+                </a>
+              </div>
             </div>
             {/* Right Side: Email & Request Quote */}
             <div className="flex items-center gap-4">
