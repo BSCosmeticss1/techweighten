@@ -56,7 +56,7 @@ const Navbar = () => {
                 info@techweighten.com
               </a>
               <span className="text-white/30">|</span>
-              <NavLink to="/contact" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+              <NavLink to="/request-quote" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
                 <span>Request a Quote</span>
               </NavLink>
             </div>
