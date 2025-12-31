@@ -17,12 +17,11 @@ const slides = [
     ],
   },
   {
-    img: '/new/tg.jpg',
+    img: '/new/newest/code.jpg',
     alt: 'Team collaboration',
     title: 'What Makes Us Different',
     // description: 'We combine strategy, engineering, and support to build resilient digital operations.',
     descriptionClass: 'text-accent',
-    features: ['Tailored solutions for specific goals', 'Modern tools and best practices', 'Partnership and long-term support'],
   },
   {
     img: '/new/yy.jpg',

@@ -16,7 +16,7 @@ const services = [
     title: 'IT Infrastructure Setup',
     description: 'Server and network installation, router/switch/firewall setup, cloud-based system deployment, and email platform migration.',
     features: ['Network Configuration', 'Cloud Deployment', 'Security Setup'],
-    image: '/IT.jpg',
+    image: '/new/newest/IT.jpg',
     id: 'it-infrastructure-setup',
   },
   {
@@ -32,7 +32,7 @@ const services = [
     title: 'Software Deployment',
     description: 'Installation and configuration of enterprise applications, custom software delivery, and licensing management.',
     features: ['App Integration', 'Custom Software', 'License Management'],
-    image: '/assets/ser3.jpg',
+    image: '/new/newest/code34.jpg',
     id: 'software-deployment',
   },
   {
@@ -40,7 +40,7 @@ const services = [
     title: 'Web & App Development',
     description: 'Corporate website design and hosting, web and mobile application development, UI/UX design and optimization.',
     features: ['Website Design', 'Mobile Apps', 'UI/UX Design'],
-    image: '/consult.jpg',
+    image: '/new/newest/software.jpg',
     id: 'web-app-development',
   },
   {
@@ -48,7 +48,7 @@ const services = [
     title: 'IT Support & Maintenance',
     description: 'Preventive and corrective maintenance, troubleshooting, system upgrades, remote and on-site support services.',
     features: ['24/7 Support', 'System Upgrades', 'Troubleshooting'],
-    image: '/support.jpg',
+    image: '/new/newest/network.jpg',
     id: 'it-support-maintenance',
   },
   {
