@@ -128,7 +128,7 @@ const Services = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <Button variant="hero" size="xl" asChild>
-            <NavLink to="/contact">
+            <NavLink to="/request-quote">
               Discuss Your Project
               <ArrowRight size={20} />
             </NavLink>

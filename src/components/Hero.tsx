@@ -17,7 +17,7 @@ const slides = [
     ],
   },
   {
-    img: '/new/newest/code.jpg',
+    img: '/new/newest/cloud.webp',
     alt: 'Team collaboration',
     title: 'What Makes Us Different',
     // description: 'We combine strategy, engineering, and support to build resilient digital operations.',

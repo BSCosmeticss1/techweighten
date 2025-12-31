@@ -63,7 +63,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className={`bg-white text-foreground ${!isHome ? 'border-b-4 border-blue-400' : ''}`}>
+      <div className={`bg-white text-foreground ${!isHome ? 'border-b-2 border-blue-400' : ''}`}>
         <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
