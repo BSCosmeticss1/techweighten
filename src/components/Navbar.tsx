@@ -51,9 +51,9 @@ const Navbar = () => {
             </div>
             {/* Right Side: Email & Request Quote */}
             <div className="flex items-center gap-4">
-              <a href="mailto:info@techweighten.com" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
+              <a href="mailto:info@techweight.com" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
                 <Mail className="h-4 w-4" />
-                info@techweighten.com
+                info@techweight.com
               </a>
               <span className="text-white/30">|</span>
               <NavLink to="/request-quote" className="flex items-center gap-2 text-white/80 hover:text-accent transition-colors text-sm">
@@ -70,7 +70,7 @@ const Navbar = () => {
           <NavLink to="/" className="flex items-center gap-3">
             <img src="/assets/techweighten-logo.png" alt="TechWeighten Logo" className="h-10 md:h-12 w-auto" />
             <span className="text-lg md:text-2xl font-bold tracking-tight text-blue-600">
-              TechWeighten
+              TechWeight
             </span>
           </NavLink>
 

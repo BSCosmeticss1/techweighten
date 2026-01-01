@@ -36,16 +36,16 @@ const Contact = () => {
                     <h4 className="font-semibold text-foreground mb-2 text-lg">Email</h4>
                     <div className="flex flex-col gap-1">
                       <a 
-                        href="mailto:info@techweighten.com" 
+                        href="mailto:info@techweight.com" 
                         className="block max-w-full break-all sm:break-normal text-muted-foreground hover:text-blue-600 transition-colors text-base"
                       >
-                        info@techweighten.com
+                        info@techweight.com
                       </a>
                       <a 
                         href="mailto:techweightenterprises@outlook.com" 
                         className="block max-w-full break-all sm:break-normal text-muted-foreground hover:text-blue-600 transition-colors text-base"
                       >
-                        techweightenterprises@outlook.com
+                        techweighterprises@outlook.com
                       </a>
                     </div>
                   </div>

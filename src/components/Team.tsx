@@ -37,7 +37,7 @@ const Team = () => {
             <span className="text-primary">Trust</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            TechWeighten Technologies is backed by a team of dedicated professionals committed to your success.
+            TechWeight Technologies is backed by a team of dedicated professionals committed to your success.
           </p>
         </div>
 

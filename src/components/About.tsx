@@ -29,15 +29,15 @@ const About = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+          <span className="text-primary font-semibold text-base md:text-lg uppercase tracking-wider mb-4 block">
             About Us
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Technology Solutions That{' '}
-            <span className="text-primary">Drive Growth</span>
+            <span className="text-primary">Drive Business Growth</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            TechWeighten is a forward-thinking technology solutions company dedicated to helping businesses work smarter, faster, and more securely.
+            TechWeight is a forward-thinking technology solutions company dedicated to helping businesses work smarter, faster, and more securely.
           </p>
         </div>
 
@@ -48,7 +48,7 @@ const About = () => {
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50" />
             <img 
               src="/assets/team-collab.jpg" 
-              alt="TechWeighten team collaborating" 
+              alt="TechWeight team collaborating" 
               className="relative w-full rounded-2xl shadow-2xl"
             />
           </div>
@@ -89,7 +89,7 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
-              To empower African businesses with secure, innovative, and future-ready technology solutions that enhance productivity, accelerate growth, and sustain long-term value.
+              To empower businesses with secure, innovative, and future-ready technology solutions that enhance productivity, accelerate growth, and sustain long-term value.
             </p>
           </div>
           <div className="bg-card rounded-2xl p-8 border border-border card-hover">
