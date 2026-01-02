@@ -95,7 +95,7 @@ const Expertise = () => {
 
         <div className="text-center">
           <Button variant="accent" size="xl" asChild>
-            <NavLink to="/contact">
+            <NavLink to="/request-quote">
               Start Your Project
               <ArrowRight size={20} />
             </NavLink>

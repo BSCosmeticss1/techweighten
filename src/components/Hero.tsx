@@ -12,7 +12,7 @@ const slides = [
     // description: 'Your business is our business. We deliver innovative IT solutions tailored to your operational, technical, and business goals.',
     descriptionClass: 'text-white',
     buttons: [
-      { text: 'Start Your Project', variant: 'accent', to: '/contact' },
+      { text: 'Start Your Project', variant: 'accent', to: '/request-quote' },
       { text: 'Explore Services', variant: 'hero', to: '/services' },
     ],
   },
@@ -38,7 +38,7 @@ const slides = [
     // description: 'Stay ahead of the curve with our latest technological advancements and innovative solutions.',
     descriptionClass: 'text-primary-foreground/90',
     buttons: [
-      { text: 'Get Started', variant: 'accent', to: '/contact' },
+      { text: 'Get Started', variant: 'accent', to: '/request-quote' },
       { text: 'Our Innovations', variant: 'hero', to: '/services' },
     ],
   },
